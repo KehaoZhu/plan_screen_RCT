@@ -237,7 +237,7 @@ get.prob <-
   dat$all.late <- dat$d.late.p + dat$int.late.p
   dat$all.early <- dat$d.early.p + dat$int.early.p
   
-  dat$all.detect <- dat$d.late.p + dat$int.late.p
+  dat$all.detect <- dat$d.late.p + dat$d.early.p
   dat$all.interval <- dat$int.late.p + dat$int.early.p
   
   return(dat)
